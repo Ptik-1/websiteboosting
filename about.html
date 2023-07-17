@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <!-- to ensure that the web page is responsive and adapts well to different screen sizes -->
+    <title>Welcome</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- link to csss file -->
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="test.html"><img src="images/boost.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class= "fa-solid fa-xmark"  style="color: #ffffff;" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="test.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="packs.html">PACKS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+        </nav>
+    <h1>About Us</h1>
+
+    </section>  
+<section class="about-content">
+    <div class="row">
+        <div class="about-col">
+            <p> <br><br>As the proud creator of the largest website dedicated to helping individuals find safe and exceptional people to boost their accounts, I am driven by a singular vision. In today's vast digital landscape, it's imperative to navigate through a sea of possibilities and find trustworthy connections. That's why I embarked on this journey to establish an unparalleled platform where users can discover the most reliable and remarkable individuals to enhance their online presence. With our expansive community, advanced safety measures, and unwavering commitment to excellence, we are here to revolutionize your online experience. Join us today and unlock a world of limitless potential, where success and authenticity reign supreme.</p>
+        </div>
+        <div class="about-col">
+            <img src="images/annie.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="about-us">
+    <h4>About Us</h4>
+    <p>We are a group of people that decided that boosting was needind <br> a hub where people could regroup to have everyone at the same place:<br> People that needs boost and the boosters.<br> So this website was launched to achieve this goal.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</section>
+<!-- JS to toggle menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>

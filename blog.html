@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+    <!-- to ensure that the web page is responsive and adapts well to different screen sizes -->
+    <title>Welcome</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- link to csss file -->
+</head>
+<body>
+    <section class="sub-header3">
+        <nav>
+            <a href="test.html"><img src="images/boost.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class= "fa-solid fa-xmark"  style="color: #ffffff;" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="test.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="packs.html">PACKS</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" style="color: #ffffff;" onclick="showMenu()"></i>
+        </nav>
+        <h1>Blog</h1>
+    </nav>
+    </section>
+    <div class="comment-box">
+        <h3>Leave a comment</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Enter name">
+            <input type="email" placeholder="Enter email">
+            <textarea rows="5" placeholder="Your comment"></textarea>
+            <button type="submit" class="main-btn">POST COMMENT</button>
+        </form>
+    </div>
+<section class="about-us">
+    <h4>About Us</h4>
+    <p>We are a group of people that decided that boosting was needind <br> a hub where people could regroup to have everyone at the same place:<br> People that needs boost and the boosters.<br> So this website was launched to achieve this goal.</p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+    </div>
+</section>
+<!-- JS to toggle menu -->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
